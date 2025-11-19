@@ -17,7 +17,6 @@ body {
   font-family: "Messina Sans";
   background-color: var(--bg);
   color: var(--fg);
-  overflow: hidden;
 }
 
 img {
