@@ -133,4 +133,7 @@
     text-align: center;
     gap: 0.25em;
   }
+  .map{
+    width: 100%;
+  }
 }

@@ -9,13 +9,15 @@ const Footer = () => {
       <div className="footer-row">
         <div className="footer-contact">
           <h3>
-            Let’s Collaborate <br />
-            film<span>@</span>nicopalmer.com
+            Want to write? <br />
+            contact<span>@</span>gotacamp.com
+            <br />
+            <br />
+            (760) 892-4682
           </h3>
 
           <p className="secondary">
-            From short films to full productions — I’m always open to creative
-            collaborations. Feel free to reach out anytime.
+            GOTA Camp was born out of a mission: to restore health, renew hope, and guide people toward a fulfilling life in a Christian environment.
           </p>
 
           <Link to="/contact" className="btn">
@@ -43,7 +45,10 @@ const Footer = () => {
             <span>Contact</span>
             <span>&#8594;</span>
           </Link>
-
+          <Link to="/Blog" className="footer-nav-item">
+            <span>Blog</span>
+            <span>&#8594;</span>
+          </Link>
           <Link to="/faq" className="footer-nav-item">
             <span>FAQ</span>
             <span>&#8594;</span>
@@ -52,13 +57,13 @@ const Footer = () => {
       </div>
       <div className="footer-row">
         <div className="footer-header">
-          <h1>Nico</h1>
-          <h1>Palmer</h1>
+          <h1>GOTA</h1>
+          <h1>CAMP</h1>
         </div>
 
         <div className="footer-copyright-line">
-          <p className="primary sm">&copy; Nico Palmer 2025</p>
-          <p className="primary sm">Website Template by Codegrid</p>
+          <p className="primary sm">&copy; Gotacamp 2025</p>
+          <p className="primary sm">Website by <a href="https://neuronixve.vercel.app">Neuronix</a></p>
         </div>
       </div>
     </div>

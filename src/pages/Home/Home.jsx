@@ -1,4 +1,5 @@
 import workList from "../../data/workList";
+import blogList from "../../data/BlogList";
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
@@ -138,42 +139,52 @@ const Home = () => {
       <div className="page home">
         <section className="hero">
           <div className="hero-img">
-            <img src="/home/hero.jpg" alt="" />
+            <video 
+              src="/home/C0996.mp4" 
+              autoPlay 
+              loop 
+              muted 
+              playsInline 
+              className="hero-video"
+            /> 
           </div>
+          
 
           <div className="hero-header">
             <AnimatedCopy tag="h1" animateOnScroll={false} delay={0.7}>
-              Nico
+              Recover your 
+              health
             </AnimatedCopy>
-            <AnimatedCopy tag="h1" animateOnScroll={false} delay={0.8}>
-              Palmer
+            <AnimatedCopy tag="p" animateOnScroll={false} delay={0.7}>
+              GotaCamp is a place where health is cultivated naturally and well-being is lived as a lifestyle
             </AnimatedCopy>
           </div>
         </section>
 
         <section ref={stickyTitlesRef} className="sticky-titles">
           <div className="sticky-titles-nav">
-            <p className="primary sm">About Me</p>
+            <p className="primary sm">About us</p>
             <p className="primary sm">Let’s Connect</p>
           </div>
           <div className="sticky-titles-footer">
-            <p className="primary sm">Storytelling Through Film</p>
-            <p className="primary sm">Open to Collaborations</p>
+            <p className="primary sm">Our Services</p>
+            <p className="primary sm">Open Our Services</p>
           </div>
           <h2 ref={(el) => (titlesRef.current[0] = el)}>
-            I craft films that tell human stories with cinematic depth.
+            What once saved her life now transforms the lives of others at GotaCamp!
           </h2>
           <h2 ref={(el) => (titlesRef.current[1] = el)}>
-            Each project is driven by emotion, clarity, and vision.
+            Twelve years of illness and failed treatments ended when she heard God’s voice and turned to natural medicine: in two weeks, she regained her health.
           </h2>
           <h2 ref={(el) => (titlesRef.current[2] = el)}>
-            This portfolio is a glimpse into the frames that move me.
+            Dr. Mario, along with Alejandra, a naturopath with years of experience, created GotaCamp: a space for more people to experience true healing and renewal.
           </h2>
         </section>
 
         <section ref={stickyWorkHeaderRef} className="sticky-work-header">
           <AnimatedCopy tag="h1" animateOnScroll="true">
-            Palmer selects
+            “Dear friend, I pray that you may enjoy good health and that all may go well with you, even as your soul is getting along well”
+          – 3 John 1:2 –
           </AnimatedCopy>
         </section>
 
@@ -204,23 +215,50 @@ const Home = () => {
         <section className="hobbies">
           <div className="hobby">
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Camera
+              Healing
             </AnimatedCopy>
           </div>
           <div className="hobby">
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Editing
+              Well-being
             </AnimatedCopy>
           </div>
           <div className="hobby">
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Story
+              Hope
             </AnimatedCopy>
           </div>
           <div className="hobby">
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Sound
+              Soul
             </AnimatedCopy>
+          </div>
+        </section>
+
+         <section ref={homeWorkRef} className="home-work">
+          <div className="blog">
+            <AnimatedCopy tag="h1" animateOnScroll={true}>
+              BLOG
+            </AnimatedCopy>
+          </div>
+          <div className="home-work-list">
+            {workItems.map((work, index) => (
+              <Link
+                to="/sample-project"
+                key={blogList.id}
+                className="home-work-item"
+              >
+                <p className="primary sm">{`${String(index + 1).padStart(
+                  2,
+                  "0"
+                )} - ${String(workItems.length).padStart(2, "0")}`}</p>
+                <h3>{work.title}</h3>
+                <div className="work-item-img">
+                  <img src={work.image} alt={work.title} />
+                </div>
+                <h4>{work.category}</h4>
+              </Link>
+            ))}
           </div>
         </section>
 

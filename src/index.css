@@ -17,6 +17,7 @@ body {
   font-family: "Messina Sans";
   background-color: var(--bg);
   color: var(--fg);
+  overflow: hidden;
 }
 
 img {
@@ -33,7 +34,7 @@ h3,
 h4,
 h5 {
   text-transform: uppercase;
-  font-family: "Rader";
+  font-family: "coolvetica";
 }
 
 h1 {
@@ -44,7 +45,7 @@ h1 {
 }
 
 h2 {
-  font-size: 5vw;
+  font-size: 4vw;
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 4vw;
@@ -166,12 +167,12 @@ textarea::placeholder {
 
 @media (max-width: 1000px) {
   h1 {
-    font-size: 14vw;
+    font-size: 12vw;
     line-height: 12vw;
   }
 
   h2 {
-    font-size: 10vw;
+    font-size: 8vw;
     line-height: 8vw;
   }
 
@@ -183,5 +184,9 @@ textarea::placeholder {
   h4 {
     font-size: 6vw;
     line-height: 6vw;
+  }
+  p {
+    font-size: 3vw;
+    line-height: 3vw;
   }
 }

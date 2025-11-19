@@ -1,34 +1,22 @@
 const workList = [
   {
     id: 1,
-    title: "Fragments of Light",
-    category: "Short Film",
-    image: "/work/work-1.jpg",
+    title: "In-Person Consultation",
+    category: "Discover what your blood reveals about your well-being.",
+    image: "/work/enfermera.jpg",
   },
   {
     id: 2,
-    title: "Market Pulse",
-    category: "Documentary",
-    image: "/work/work-2.jpg",
+    title: "7-Day Detox Retreats",
+    category: "Cleanse your body, regain your energy, and renew your life.",
+    image: "/work/plato.jpg",
   },
   {
     id: 3,
-    title: "The Stillness Project",
-    category: "Experimental",
-    image: "/work/work-3.jpg",
-  },
-  {
-    id: 4,
-    title: "Chroma/City",
-    category: "Branded Content",
-    image: "/work/work-4.jpg",
-  },
-  {
-    id: 5,
-    title: "Echoes of Silence",
-    category: "Narrative Drama",
-    image: "/work/work-5.jpg",
-  },
+    title: "Mobile Clinic",
+    category: "We can travel to: Orange, Los Angeles, San Bernardino, Riverside, and San Diego.",
+    image: "/work/hombre.jpg",
+  }
 ];
 
 export default workList;

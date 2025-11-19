@@ -41,6 +41,7 @@
   display: inline-block;
   top: -0.05em;
   color: var(--bg);
+  max-width: 60%;
 }
 
 .menu-actions {
@@ -138,7 +139,7 @@
 .menu-link-item .menu-link-item-holder a {
   position: relative;
   color: var(--bg);
-  font-family: "Rader";
+  font-family: "Coolvetica";
   font-size: 7vw;
   text-transform: uppercase;
   letter-spacing: -0.01em;

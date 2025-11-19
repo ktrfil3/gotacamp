@@ -7,8 +7,9 @@ import { gsap } from "gsap";
 const Menu = () => {
   const menuLinks = [
     { path: "/", label: "Home" },
-    { path: "/work", label: "Work" },
+    { path: "/work", label: "ServiceS" },
     { path: "/about", label: "About" },
+    { path: "/Blog", label: "Blog" },
     { path: "/contact", label: "Contact" },
     { path: "/faq", label: "FAQ" },
   ];
@@ -185,7 +186,7 @@ const Menu = () => {
         <div className="menu-bar-container">
           <div className="menu-logo" onClick={closeMenu}>
             <Link to="/">
-              <h4>Palmer</h4>
+              <img src="cropped-Logo.webp" alt="" />
             </Link>
           </div>
           <div className="menu-actions">

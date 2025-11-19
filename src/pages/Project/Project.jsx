@@ -18,16 +18,16 @@ const Project = () => {
             animateOnScroll={false}
             className="primary sm"
           >
-            Short film on self-discovery
+            Discover what your blood reveals about your well-being.
           </AnimatedCopy>
           <AnimatedCopy tag="h2" delay={1}>
-            Fragments of Light
+            In-Person Consultation
           </AnimatedCopy>
         </section>
 
         <section className="project-banner-img">
           <div className="project-banner-img-wrapper">
-            <ParallaxImage src="/project/banner.jpg" alt="" />
+            <ParallaxImage src="/work/enfermera.jpg" alt="" />
           </div>
         </section>
 
@@ -37,45 +37,43 @@ const Project = () => {
               Overview
             </AnimatedCopy>
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              A visual meditation on identity, *Fragments of Light* explores the
-              quiet journey of self-discovery through minimalism, mood, and
-              motion.
+              Experience a comprehensive evaluation with Alejandra Robinson, co-founder of GOTA Camp and a live blood microscopy specialist. In a personalized one-hour session, you’ll receive:
+            </AnimatedCopy>
+            <AnimatedCopy tag="h4" animateOnScroll={true}>
+              Live blood analysis to detect imbalances and risks.
+            </AnimatedCopy>
+            <AnimatedCopy tag="h4" animateOnScroll={true}>
+              Comprehensive health assessment tailored to your needs.
+            </AnimatedCopy>
+            <AnimatedCopy tag="h4" animateOnScroll={true}>
+              Personalized recommendations to improve your well-being and energy.
             </AnimatedCopy>
           </div>
 
           <div className="details">
             <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Year
+              💲 Fee:
             </AnimatedCopy>
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              2024
+              $250 (includes blood analysis)
             </AnimatedCopy>
           </div>
 
           <div className="details">
             <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Category
+              📍 Modality:
             </AnimatedCopy>
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Short Film
+               In-person
             </AnimatedCopy>
           </div>
 
           <div className="details">
             <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Running Time
+              📅 Duration:
             </AnimatedCopy>
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              6:30
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Directed by
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Nico Palmer
+               1 hour
             </AnimatedCopy>
           </div>
         </section>
@@ -84,31 +82,25 @@ const Project = () => {
           <div className="project-images-container">
             <div className="project-img">
               <div className="project-img-wrapper">
-                <ParallaxImage src="/project/project-1.jpg" alt="" />
+                <ParallaxImage src="/project/estu.webp" alt="" />
               </div>
             </div>
 
             <div className="project-img">
               <div className="project-img-wrapper">
-                <ParallaxImage src="/project/project-2.jpg" alt="" />
+                <ParallaxImage src="/project/image.webp" alt="" />
               </div>
             </div>
 
             <div className="project-img">
               <div className="project-img-wrapper">
-                <ParallaxImage src="/project/project-3.jpg" alt="" />
+                <ParallaxImage src="/project/mujer.webp" alt="" />
               </div>
             </div>
 
             <div className="project-img">
               <div className="project-img-wrapper">
-                <ParallaxImage src="/project/project-4.jpg" alt="" />
-              </div>
-            </div>
-
-            <div className="project-img">
-              <div className="project-img-wrapper">
-                <ParallaxImage src="/project/project-5.jpg" alt="" />
+                <ParallaxImage src="/project/image.webp" alt="" />
               </div>
             </div>
           </div>
@@ -117,46 +109,13 @@ const Project = () => {
         <section className="project-details">
           <div className="details">
             <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Editor
+              More
+            </AnimatedCopy>
+            <AnimatedCopy tag="h3" animateOnScroll={true}>
+              Book your appointment directly online or request additional dates by calling 760-892-4682.
             </AnimatedCopy>
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Nico Palmer
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Sound Design
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Elena Brooks
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Art Director
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Milo Vance
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Producer
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Asha Lennox
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Director
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Nico Palmer
+             Discover what your blood reveals about your well-being.
             </AnimatedCopy>
           </div>
         </section>
@@ -171,12 +130,12 @@ const Project = () => {
 
           <div className="next-project-img">
             <div className="next-project-img-wrapper">
-              <ParallaxImage src="/work/work-2.jpg" alt="" />
+              <ParallaxImage src="/work/plato.jpg" alt="" />
             </div>
           </div>
 
           <AnimatedCopy tag="h4" animateOnScroll={true}>
-            Market Pulse
+            7-Day Detox Retreats
           </AnimatedCopy>
         </section>
       </div>
