@@ -25,7 +25,9 @@
   flex-direction: column;
   align-items: flex-end;
 }
-
+.secondary{
+  line-height: 1.1;
+}
 .footer-nav-item {
   width: 50%;
   padding: 1em 0;
