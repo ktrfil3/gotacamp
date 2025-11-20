@@ -211,7 +211,9 @@
   .fav-tools {
     margin: 1.25em;
   }
-
+.about-hero{
+    height: 30svh;
+}
   .about-me-copy {
     padding: 4em 1.25em;
   }
