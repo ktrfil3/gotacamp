@@ -1,59 +1,27 @@
+import React from "react";
 import { motion } from "framer-motion";
-import "./Transition.css";
 
-const calculateRandomBlockDelay = (rowIndex, totalRows) => {
-  const blockDelay = Math.random() * 0.5;
-  const rowDelay = (totalRows - rowIndex - 1) * 0.05;
-  return blockDelay + rowDelay;
-};
+// No necesitamos importar CSS específico si solo vamos a usar opacidad,
+// a menos que tengas estilos globales allí.
+// import "./Transition.css"; 
 
-const Transition = (Page) => {
+const Transition = (OgPage) => {
   return () => (
-    <>
-      <Page />
-
-      <div className="blocks-container transition-in">
-        {Array.from({ length: 10 }).map((_, rowIndex) => (
-          <div className="row" key={rowIndex}>
-            {Array.from({ length: 11 }).map((_, blockIndex) => (
-              <motion.div
-                key={blockIndex}
-                className="block"
-                initial={{ scaleY: 1 }}
-                animate={{ scaleY: 0 }}
-                exit={{ scaleY: 0 }}
-                transition={{
-                  duration: 1,
-                  ease: [0.22, 1, 0.36, 1],
-                  delay: calculateRandomBlockDelay(rowIndex, 10),
-                }}
-              ></motion.div>
-            ))}
-          </div>
-        ))}
-      </div>
-
-      <div className="blocks-container transition-out">
-        {Array.from({ length: 10 }).map((_, rowIndex) => (
-          <div className="row" key={rowIndex}>
-            {Array.from({ length: 11 }).map((_, blockIndex) => (
-              <motion.div
-                key={blockIndex}
-                className="block"
-                initial={{ scaleY: 0 }}
-                animate={{ scaleY: 0 }}
-                exit={{ scaleY: 1 }}
-                transition={{
-                  duration: 1,
-                  ease: [0.22, 1, 0.36, 1],
-                  delay: calculateRandomBlockDelay(rowIndex, 10),
-                }}
-              ></motion.div>
-            ))}
-          </div>
-        ))}
-      </div>
-    </>
+    <motion.div
+      // Estado inicial: Invisible
+      initial={{ opacity: 0 }} 
+      // Estado animado: Totalmente visible (Fade In)
+      animate={{ opacity: 1 }} 
+      // Estado al salir: Invisible (Fade Out)
+      exit={{ opacity: 0 }} 
+      // Configuración de tiempo y suavidad
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+      
+      // Aseguramos que ocupe el espacio correcto (opcional, depende de tu layout)
+      style={{ width: "100%", height: "100%" }} 
+    >
+      <OgPage />
+    </motion.div>
   );
 };
 
