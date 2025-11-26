@@ -52,7 +52,10 @@ const Home = () => {
             </AnimatedCopy>
           </div>
         </section>
-
+        <div className="scroll-down-indicator">
+        <p>Scroll Down</p>
+        <span className="arrow-down"></span>
+        </div>
         {/* REEMPLAZO DE LA SECCIÓN ANTERIOR POR EL CARRUSEL */}
         <StickyTitlesCarousel />
 
