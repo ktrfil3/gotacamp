@@ -8,7 +8,7 @@ import AnimatedCopy from "../../components/AnimatedCopy/AnimatedCopy";
 import Reviews from "../../components/Reviews/Reviews";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import Footer from "../../components/Footer/Footer";
-import StickyTitlesCarousel from "../../components/StickyTitlesCarousel/StickyTitlesCarousel"; // <--- IMPORTACIÓN DEL NUEVO COMPONENTE
+import StickyTitlesCarousel from "../../components/StickyTitlesCarousel/"; // <--- IMPORTACIÓN DEL NUEVO COMPONENTE
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
