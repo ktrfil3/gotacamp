@@ -15,7 +15,7 @@ const projects = [
     id: 3,
     title: "Mobile Clinic",
     description: "Visual ode to silence",
-    image: "/work/hombre.jpg",
+    image: "/work/115.jpg",
   }
 ];
 
