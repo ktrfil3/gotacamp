@@ -187,3 +187,95 @@
     aspect-ratio: 5/3;
   }
 }
+
+
+.carousel-content {
+  flex-grow: 1; /* Ocupa el espacio central restante */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 900px; /* Limita el ancho del contenido del carrusel para estética */
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+}
+
+/* Wrapper del título para control de espacio y animación (opcional) */
+.carousel-title-wrapper {
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+    /* Define un área fija para el texto para que los botones no se muevan */
+    min-width: 70%; 
+}
+
+/* El título en sí, centrado */
+.carousel-title-wrapper .carousel-title {
+    text-align: center;
+    margin: 0; 
+    padding: 0 15px; 
+    /* Estilos para una transición simple de fade */
+    transition: opacity 0.5s ease-in-out; 
+}
+
+
+/* Botones de navegación */
+.carousel-button {
+  background: none;
+  border: none;
+  font-size: 2em; /* Hazlos visibles y prominentes */
+  cursor: pointer;
+  padding: 10px;
+  color: var(--fg); 
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  z-index: 3; 
+}
+
+.carousel-button:hover {
+  opacity: 1;
+}
+
+/* Indicadores (puntos inferiores) */
+.carousel-indicators {
+  position: absolute; 
+  bottom: 10%; 
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.indicator {
+  height: 8px;
+  width: 8px;
+  background-color: var(--fg); 
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  opacity: 0.3; /* Desactivado */
+  transition: opacity 0.3s ease;
+}
+
+.indicator.active {
+  opacity: 1; /* Activo */
+}
+
+/* ======================================= */
+/* Ajuste en media query para móviles */
+/* ======================================= */
+
+@media (max-width: 1000px) {
+  /* ... (Tus estilos existentes) ... */
+  
+  .carousel-title-wrapper {
+      min-width: 60%; 
+  }
+
+  .carousel-button {
+      font-size: 1.5em; 
+  }
+}
