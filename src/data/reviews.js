@@ -15,7 +15,7 @@ const reviews = [
     id: 3,
     copy: "Truly professional, creative, and detail-oriented. You made our vision clearer and better than we imagined.",
     author: "Sophie Nguyen",
-    image: "/reviews/hombre.jpg",
+    image: "/reviews/115.jpg",
   },
 ];
 
