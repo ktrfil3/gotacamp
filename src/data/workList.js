@@ -15,7 +15,7 @@ const workList = [
     id: 3,
     title: "Mobile Clinic",
     category: "We can travel to: Orange, Los Angeles, San Bernardino, Riverside, and San Diego.",
-    image: "/work/enfermera.jpg",
+    image: "/work/115.jpg",
   }
 ];
 
