@@ -77,7 +77,7 @@ const Home = () => {
                 <p className="primary sm">{`${String(index + 1).padStart(
                   2,
                   "0"
-                )} - ${String(workItems.length).padStart(2, "0")}`testimonial}</p>
+                )} - ${String(workItems.length).padStart(2, "0")}`}</p>
                 <h3>{work.title}</h3>
                 <div className="work-item-img">
                   <img src={work.image} alt={work.title} />
