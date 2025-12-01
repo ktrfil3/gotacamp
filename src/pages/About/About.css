@@ -27,12 +27,11 @@
 
 .about-hero-img {
   /* Fija el contenedor al 100% del viewport */
-  position: fixed; 
+  position: absolute; 
   top: 0;
   left: 0;
   width: 100vw; /* 100% del ancho del viewport */
   height: 100vh; /* 100% de la altura del viewport */
-  overflow: hidden;
   z-index: -100; /* Asegura que el video esté detrás del contenido */
 }
 
