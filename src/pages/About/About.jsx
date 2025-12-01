@@ -20,7 +20,7 @@ const About = () => {
 
         <section className="about-hero">
           <div className="about-hero-img">
-            <iframe title="vimeo-player" src="https://player.vimeo.com/video/1118524876?h=3f8c680711" width="100vh" height="100vh" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/1118524876?h=3f8c680711" width="100vw" height="100vh" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
           </div>
         </section>
 
