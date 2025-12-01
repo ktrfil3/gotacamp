@@ -17,6 +17,11 @@
   width: 50%;
   margin: 0 auto;
 }
+.testimonialh2 {
+  font-family: "coolvetica";
+  font-size: 3rem;
+  margin-bottom: 30rem;
+}
 
 .review-item {
   width: 100%;
