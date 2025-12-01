@@ -74,7 +74,7 @@ const Home = () => {
                 key={work.id}
                 className="home-work-item"
               >
-                <p className="primary sm">{`${String(index + 1).padStart(
+                <p className="primary sm">testimonial{`${String(index + 1).padStart(
                   2,
                   "0"
                 )} - ${String(workItems.length).padStart(2, "0")}`}</p>
