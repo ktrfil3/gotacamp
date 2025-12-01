@@ -32,24 +32,8 @@
   left: 0;
   width: 100vw; /* 100% del ancho del viewport */
   height: 100vh; /* 100% de la altura del viewport */
-  z-index: -100; /* Asegura que el video esté detrás del contenido */
+  z-index: -1; /* Asegura que el video esté detrás del contenido */
 }
-
-.about-hero-img {
-  /* Ajuste responsivo principal */
-  min-width: 100%; 
-  min-height: 100%;
-  
-  /* Asegura que cubra el espacio sin estirarse (recorta los bordes si es necesario) */
-  object-fit: cover; 
-  
-  /* Centra el video dentro del contenedor */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-}
-
 .about-me-copy {
   position: relative;
   width: 100%;
