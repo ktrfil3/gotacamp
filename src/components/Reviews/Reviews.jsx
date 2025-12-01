@@ -133,6 +133,8 @@ const Reviews = () => {
 
   return (
     <section className="reviews" ref={reviewsContainerRef}>
+       <h2 Testimonial
+      </h2>
       <h3 id="quote-icon">
         <BiSolidQuoteLeft />
       </h3>
