@@ -96,7 +96,14 @@ const About = () => {
 
         <section className="about-banner-img">
           <div className="about-banner-img-wrapper">
-            <img src="/about/casa.webp" alt="" />
+            <video 
+              src="/home/C1079 (2).mp4" 
+              autoPlay 
+              loop 
+              muted 
+              playsInline 
+              className="hero-video"
+            />
           </div>
         </section>
 
