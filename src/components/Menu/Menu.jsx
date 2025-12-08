@@ -9,7 +9,7 @@ const Menu = () => {
     { path: "/", label: "Home" },
     { path: "/work", label: "ServiceS" },
     { path: "/about", label: "About" },
-    { path: "/Blog", label: "Blog" },
+    { path: "/blog", label: "Blog" },
     { path: "/contact", label: "Contact" },
     { path: "/faq", label: "FAQ" },
   ];

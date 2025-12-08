@@ -133,7 +133,7 @@ const Reviews = () => {
 
   return (
     <section className="reviews" ref={reviewsContainerRef}>
-       <h2 className="testimonialh2">Testimonial</h2>
+      <h2 className="testimonialh2">Testimonial</h2>
       <h3 id="quote-icon">
         <BiSolidQuoteLeft />
       </h3>
@@ -147,9 +147,8 @@ const Reviews = () => {
         {reviews.map((review, index) => (
           <div
             key={review.id}
-            className={`review-thumbnail ${
-              index === activeReview ? "active" : ""
-            }`}
+            className={`review-thumbnail ${index === activeReview ? "active" : ""
+              }`}
             onClick={() => handleReviewClick(index)}
           >
             <img src={review.image} alt={`Review by ${review.author}`} />

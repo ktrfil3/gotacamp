@@ -9,8 +9,9 @@
   padding-bottom: 3em;
   text-align: center;
 }
+
 .project-header h2 {
- font-size: 60px;
+  font-size: 60px;
 }
 
 .project-banner-img {
@@ -84,6 +85,7 @@
   align-items: center;
   gap: 1.5em;
   text-align: center;
+  cursor: pointer;
 }
 
 .next-project-img {

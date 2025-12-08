@@ -1,21 +1,21 @@
 const reviews = [
   {
     id: 1,
-    copy: "recently completed one of our 7-Day Comprehensive Detox/Cleanses. Watch  this 2-min. video as he shares his experience and comments about the program and the amazing effect it had on his life.",
-    author: "Marti Rouse ",
-    image: "/reviews/enfermera.jpg",
+    copy: "For years, I was struggling with nicotine. I chewed on nicotine gum right when I arrived [at GOTA Camp], but then I never touched that stuff again after I left. The growth on my neck went away, and because of the detox, I am now able to breathe like never before.",
+    author: "David C.",
+    image: "/reviews/1.avif",
   },
   {
     id: 2,
-    copy: "Your direction brought our brand to life. Every frame had purpose and emotion — couldn't be happier with the result.",
-    author: "Liam Carter",
-    image: "/reviews/plato.jpg",
+    copy: "I heard about GOTA Camp from my aunt. At that time, I was struggling with my mental health. I wanted to become a better version of myself. From day one, Dr. Mario and Alejandra provided amazing support — mentally, spiritually, and physically. I was such a healing experience that I want to go again!",
+    author: "Wendy C.",
+    image: "/reviews/2.avif",
   },
   {
     id: 3,
-    copy: "Truly professional, creative, and detail-oriented. You made our vision clearer and better than we imagined.",
-    author: "Sophie Nguyen",
-    image: "/reviews/115.jpg",
+    copy: "What a gorgeous setting! Wonderful, relaxing retreat away from the city. The sauna is wonderful and the staff very dedicated. Dr. Mario is a consecrated person.",
+    author: "John H.",
+    image: "/reviews/3.avif",
   },
 ];
 

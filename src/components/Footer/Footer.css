@@ -39,7 +39,9 @@
 .footer-nav-item:last-child {
   border-bottom: 1px dashed var(--fg);
 }
-
+.secondary{
+  line-height: 1.1;
+}
 .footer-contact {
   display: flex;
   flex-direction: column;

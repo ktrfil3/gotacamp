@@ -1,14 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useParams, Link } from "react-router-dom";
 import "./Project.css";
+import projectDetails from "../../data/projectDetails";
 
 import ParallaxImage from "../../components/ParallaxImage/ParallaxImage";
 import AnimatedCopy from "../../components/AnimatedCopy/AnimatedCopy";
-
 import ReactLenis from "lenis/react";
-
 import Transition from "../../components/Transition/Transition";
 
 const Project = () => {
+  const { id } = useParams();
+  // Default to project 1 if no ID or not found (for safety, though routing should handle it)
+  const projectId = parseInt(id) || 1;
+  const project = projectDetails.find((p) => p.id === projectId) || projectDetails[0];
+
+  // Scroll to top when project changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [projectId]);
+
+  if (!project) return null;
+
   return (
     <ReactLenis root>
       <div className="page project">
@@ -18,16 +30,16 @@ const Project = () => {
             animateOnScroll={false}
             className="primary sm"
           >
-            Discover what your blood reveals about your well-being.
+            {project.subtitle}
           </AnimatedCopy>
           <AnimatedCopy tag="h2" delay={1}>
-            In-Person Consultation
+            {project.title}
           </AnimatedCopy>
         </section>
 
         <section className="project-banner-img">
           <div className="project-banner-img-wrapper">
-            <ParallaxImage src="/work/enfermera.jpg" alt="" />
+            <ParallaxImage src={project.heroImage} alt={project.title} />
           </div>
         </section>
 
@@ -37,34 +49,49 @@ const Project = () => {
               Overview
             </AnimatedCopy>
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Experience a comprehensive evaluation with Alejandra Robinson, co-founder of GOTA Camp and a live blood microscopy specialist. In a personalized one-hour session, you’ll receive:
+              {project.overview}
+            </AnimatedCopy>
+
+            {project.benefits.map((benefit, index) => (
+              <AnimatedCopy key={index} tag="h4" animateOnScroll={true}>
+                {benefit}
+              </AnimatedCopy>
+            ))}
+          </div>
+
+          <div className="details">
+            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
+              💲 Basic Plan:
             </AnimatedCopy>
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Live blood analysis to detect imbalances and risks.
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Comprehensive health assessment tailored to your needs.
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Personalized recommendations to improve your well-being and energy.
+              {project.Basic}
             </AnimatedCopy>
           </div>
 
           <div className="details">
             <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              💲 Fee:
+              💲 Premium Plan:
             </AnimatedCopy>
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              $250 (includes blood analysis)
+              {project.Premium}
             </AnimatedCopy>
           </div>
+          <div className="details">
+            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
+              💲 Early Bird Discount:
+            </AnimatedCopy>
+            <AnimatedCopy tag="h4" animateOnScroll={true}>
+              {project.EarlyBirdDiscount}
+            </AnimatedCopy>
+          </div>
+
 
           <div className="details">
             <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
               📍 Modality:
             </AnimatedCopy>
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-               In-person
+              {project.modality}
             </AnimatedCopy>
           </div>
 
@@ -73,36 +100,20 @@ const Project = () => {
               📅 Duration:
             </AnimatedCopy>
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-               1 hour
+              {project.duration}
             </AnimatedCopy>
           </div>
         </section>
 
         <section className="project-images">
           <div className="project-images-container">
-            <div className="project-img">
-              <div className="project-img-wrapper">
-                <ParallaxImage src="/project/estu.webp" alt="" />
+            {project.gallery.map((imgSrc, index) => (
+              <div className="project-img" key={index}>
+                <div className="project-img-wrapper">
+                  <ParallaxImage src={imgSrc} alt="" />
+                </div>
               </div>
-            </div>
-
-            <div className="project-img">
-              <div className="project-img-wrapper">
-                <ParallaxImage src="/project/image.webp" alt="" />
-              </div>
-            </div>
-
-            <div className="project-img">
-              <div className="project-img-wrapper">
-                <ParallaxImage src="/project/mujer.webp" alt="" />
-              </div>
-            </div>
-
-            <div className="project-img">
-              <div className="project-img-wrapper">
-                <ParallaxImage src="/project/image.webp" alt="" />
-              </div>
-            </div>
+            ))}
           </div>
         </section>
 
@@ -115,29 +126,31 @@ const Project = () => {
               Book your appointment directly online or request additional dates by calling 760-892-4682.
             </AnimatedCopy>
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-             Discover what your blood reveals about your well-being.
+              Discover what your blood reveals about your well-being.
             </AnimatedCopy>
           </div>
         </section>
 
-        <section className="next-project">
-          <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-            02 - 05
-          </AnimatedCopy>
-          <AnimatedCopy tag="h3" animateOnScroll={true}>
-            Next
-          </AnimatedCopy>
+        <Link to={`/project/${project.nextProject.id}`}>
+          <section className="next-project">
+            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
+              {project.nextProject.subtitle}
+            </AnimatedCopy>
+            <AnimatedCopy tag="h3" animateOnScroll={true}>
+              Next
+            </AnimatedCopy>
 
-          <div className="next-project-img">
-            <div className="next-project-img-wrapper">
-              <ParallaxImage src="/work/plato.jpg" alt="" />
+            <div className="next-project-img">
+              <div className="next-project-img-wrapper">
+                <ParallaxImage src={project.nextProject.image} alt={project.nextProject.title} />
+              </div>
             </div>
-          </div>
 
-          <AnimatedCopy tag="h4" animateOnScroll={true}>
-            7-Day Detox Retreats
-          </AnimatedCopy>
-        </section>
+            <AnimatedCopy tag="h4" animateOnScroll={true}>
+              {project.nextProject.title}
+            </AnimatedCopy>
+          </section>
+        </Link>
       </div>
     </ReactLenis>
   );

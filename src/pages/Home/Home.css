@@ -2,11 +2,9 @@
   position: relative;
   width: 100vw;
   height: 100svh;
-  overflow: hidden;
   display: flex;
   align-items: flex-end;
   padding: 2em;
-  
 }
 
 .hero-img {
@@ -15,7 +13,6 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
 }
 
 .hero-video {
@@ -25,14 +22,16 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Asegura que el video cubra todo el contenedor */
-  z-index: -1; /* Asegura que el video esté detrás del contenido */
+  object-fit: cover;
+  /* Asegura que el video cubra todo el contenedor */
+  z-index: -1;
+  /* Asegura que el video esté detrás del contenido */
 }
 
 .hero-header {
   position: relative;
   width: 100%;
-  bottom:5%;
+  bottom: 5%;
   display: flex;
   justify-content: space-between;
   z-index: 1;
@@ -43,15 +42,17 @@
   line-height: 1;
   font-family: "Stack Sans Text", sans-serif;
 }
+
 .hero-header p {
   position: absolute;
   color: var(--bg);
   right: 20%;
   width: 80%;
-  top:100%;
+  top: 100%;
   display: flex;
   justify-content: space-between;
 }
+
 .sticky-titles {
   position: relative;
   width: 100vw;
@@ -120,6 +121,14 @@
   gap: 8em;
 }
 
+.home-blog-list {
+  width: 90%;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+
 .home-work-item {
   display: flex;
   flex-direction: column;
@@ -147,6 +156,7 @@
   border: 1px dashed var(--fg);
   border-radius: 1em;
 }
+
 .blog {
   flex: 1;
   display: flex;
@@ -155,7 +165,92 @@
   text-align: center;
 }
 
+.carousel-content {
+  flex-grow: 1;
+  /* Ocupa el espacio central restante */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 900px;
+  /* Limita el ancho del contenido del carrusel para estética */
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+}
+
+/* Wrapper del título para control de espacio y animación (opcional) */
+.carousel-title-wrapper {
+  flex-grow: 1;
+  text-align: center;
+  position: relative;
+  /* Define un área fija para el texto para que los botones no se muevan */
+  min-width: 70%;
+}
+
+/* El título en sí, centrado */
+.carousel-title-wrapper .carousel-title {
+  text-align: center;
+  margin: 0;
+  padding: 0 15px;
+  /* Estilos para una transición simple de fade */
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+/* Botones de navegación */
+.carousel-button {
+  background: none;
+  border: none;
+  font-size: 2em;
+  /* Hazlos visibles y prominentes */
+  cursor: pointer;
+  padding: 10px;
+  color: var(--fg);
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  z-index: 3;
+}
+
+.carousel-button:hover {
+  opacity: 1;
+}
+
+/* Indicadores (puntos inferiores) */
+.carousel-indicators {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.indicator {
+  height: 8px;
+  width: 8px;
+  background-color: var(--fg);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  opacity: 0.3;
+  /* Desactivado */
+  transition: opacity 0.3s ease;
+}
+
+.indicator.active {
+  opacity: 1;
+  /* Activo */
+}
+
+/* ======================================= */
+/* Ajuste en media query para móviles */
+/* ======================================= */
+
 @media (max-width: 1000px) {
+
   .hero,
   .sticky-titles,
   .sticky-work-header,
@@ -175,8 +270,13 @@
     padding: 8em 1.25em;
   }
 
-  .home-work-list {
+  .home-work-list,
+  .home-blog-list {
     width: 100%;
+  }
+
+  .home-blog-list {
+    grid-template-columns: 1fr;
   }
 
   .hobbies {
@@ -187,118 +287,44 @@
   .hobby {
     aspect-ratio: 5/3;
   }
-}
 
-
-.carousel-content {
-  flex-grow: 1; /* Ocupa el espacio central restante */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 900px; /* Limita el ancho del contenido del carrusel para estética */
-  margin: 0 auto;
-  padding: 0 10px;
-  position: relative;
-}
-
-/* Wrapper del título para control de espacio y animación (opcional) */
-.carousel-title-wrapper {
-    flex-grow: 1;
-    text-align: center;
-    position: relative;
-    /* Define un área fija para el texto para que los botones no se muevan */
-    min-width: 70%; 
-}
-
-/* El título en sí, centrado */
-.carousel-title-wrapper .carousel-title {
-    text-align: center;
-    margin: 0; 
-    padding: 0 15px; 
-    /* Estilos para una transición simple de fade */
-    transition: opacity 0.5s ease-in-out; 
-}
-
-
-/* Botones de navegación */
-.carousel-button {
-  background: none;
-  border: none;
-  font-size: 2em; /* Hazlos visibles y prominentes */
-  cursor: pointer;
-  padding: 10px;
-  color: var(--fg); 
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
-  z-index: 3; 
-}
-
-.carousel-button:hover {
-  opacity: 1;
-}
-
-/* Indicadores (puntos inferiores) */
-.carousel-indicators {
-  position: absolute; 
-  bottom: 10%; 
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  z-index: 2;
-}
-
-.indicator {
-  height: 8px;
-  width: 8px;
-  background-color: var(--fg); 
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-  opacity: 0.3; /* Desactivado */
-  transition: opacity 0.3s ease;
-}
-
-.indicator.active {
-  opacity: 1; /* Activo */
-}
-
-/* ======================================= */
-/* Ajuste en media query para móviles */
-/* ======================================= */
-
-@media (max-width: 1000px) {
-  /* ... (Tus estilos existentes) ... */
-  
   .carousel-title-wrapper {
-      min-width: 60%; 
+    min-width: 60%;
   }
 
   .carousel-button {
-      font-size: 1.5em; 
+    font-size: 1.5em;
   }
 }
+
+/* Estilos para la flecha hacia abajo y el texto "Scroll Down" */
 .scroll-down-indicator {
-  position: absolute; /* Posiciona en relación al contenedor padre */
-  bottom: -8em; /* Distancia desde la parte inferior */
+  position: absolute;
+  /* Posiciona en relación al contenedor padre */
+  bottom: -8em;
+  /* Distancia desde la parte inferior */
   left: 50%;
-  transform: translateX(-50%); /* Centra horizontalmente */
+  transform: translateX(-50%);
+  /* Centra horizontalmente */
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5em; /* Espacio entre texto y flecha */
-  color: rgb(27, 27, 27); /* Usa tu color de fondo para que resalte en la hero */
+  gap: 0.5em;
+  /* Espacio entre texto y flecha */
+  color: rgb(27, 27, 27);
+  /* Usa tu color de fondo para que resalte en la hero */
   font-size: 0.9em;
   text-transform: uppercase;
   letter-spacing: 1px;
-  z-index: 10; /* Asegúrate de que esté por encima de otros elementos */
+  z-index: 10;
+  /* Asegúrate de que esté por encima de otros elementos */
 }
 
 .scroll-down-indicator p {
-  margin: 0; /* Elimina el margen predeterminado del párrafo */
-  color: inherit; /* Hereda el color del padre */
+  margin: 0;
+  /* Elimina el margen predeterminado del párrafo */
+  color: inherit;
+  /* Hereda el color del padre */
 }
 
 /* Estilos para la flecha CSS pura */
@@ -308,18 +334,27 @@
   bottom: -8em;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-top: 10px solid rgb(27, 27, 27); /* Color de la flecha */
-  animation: bounce 1.5s infinite; /* Animación de rebote */
+  border-top: 10px solid rgb(27, 27, 27);
+  /* Color de la flecha */
+  animation: bounce 1.5s infinite;
+  /* Animación de rebote */
 }
 
 /* Animación de rebote para la flecha */
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-5px);
   }
+
   60% {
     transform: translateY(-3px);
   }

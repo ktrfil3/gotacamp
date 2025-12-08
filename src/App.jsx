@@ -3,11 +3,11 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
 import Menu from "./components/Menu/Menu";
-
 import Home from "./pages/Home/Home";
 import Work from "./pages/Work/Work";
 import Project from "./pages/Project/Project";
 import About from "./pages/About/About";
+import Blog from "./pages/Blog/Blog";
 import FAQ from "./pages/FAQ/FAQ";
 import Contact from "./pages/Contact/Contact";
 
@@ -37,9 +37,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blog/*" element={<Blog />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/work" element={<Work />} />
-          <Route path="/sample-project" element={<Project />} />
+          <Route path="/project/:id" element={<Project />} />
         </Routes>
       </AnimatePresence>
     </>

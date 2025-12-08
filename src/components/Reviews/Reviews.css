@@ -17,6 +17,7 @@
   width: 50%;
   margin: 0 auto;
 }
+
 .testimonialh2 {
   font-family: "coolvetica";
   font-size: 3rem;
@@ -27,6 +28,10 @@
   width: 100%;
   position: absolute;
   top: 50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Asegura que el video cubra todo el contenedor */
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;

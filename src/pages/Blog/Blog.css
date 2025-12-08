@@ -1,0 +1,166 @@
+.blog-page {
+    width: 100vw;
+    min-height: 100vh;
+    padding-top: 8em;
+}
+
+.blog-header {
+    padding: 2em;
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+.blog-header h1 {
+    font-size: 8vw;
+    line-height: 1;
+    text-decoration: none;
+    color: var(--fg);
+    transition: opacity 0.3s ease;
+}
+
+.blog-list {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    padding-bottom: 4em;
+}
+
+.blog-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    text-decoration: none;
+    color: var(--fg);
+    transition: opacity 0.3s ease;
+}
+
+.blog-item:hover {
+    opacity: 0.7;
+}
+
+.blog-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid var(--fg);
+    padding-bottom: 0.5em;
+}
+
+.blog-item-index {
+    font-family: "Messina Sans Mono";
+    font-size: 0.8rem;
+}
+
+.blog-item-date {
+    font-family: "Messina Sans Mono";
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.blog-item h2 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.blog-item-image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.blog-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.blog-item:hover .blog-item-image img {
+    transform: scale(1.05);
+}
+
+.blog-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Detail View Styles */
+.blog-post {
+    width: 50%;
+    margin: 0 auto;
+    padding: 4em 0;
+}
+
+.blog-post-header {
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+.blog-post-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    font-family: "Messina Sans Mono";
+    font-size: 0.9rem;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.blog-post-image {
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 3em;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.blog-post-content {
+    font-family: "Messina Sans";
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.blog-post-content p {
+    margin-bottom: 1.5em;
+}
+
+.blog-back-link {
+    display: inline-block;
+    margin-bottom: 2em;
+    font-family: "Messina Sans Mono";
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    transition: border-color 0.3s;
+}
+
+.blog-back-link:hover {
+    border-bottom-color: var(--fg);
+}
+
+@media (max-width: 1000px) {
+    .blog-list {
+        width: 90%;
+        grid-template-columns: 1fr;
+        /* Stack on mobile */
+    }
+
+    .blog-post {
+        width: 90%;
+    }
+
+    .blog-header h1 {
+        font-size: 12vw;
+    }
+
+    .blog-item h2 {
+        font-size: 1.8rem;
+    }
+}

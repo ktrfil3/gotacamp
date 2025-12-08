@@ -20,14 +20,14 @@ const About = () => {
 
         <section className="about-hero">
           <div className="about-hero-img">
-            <iframe className="vimeo-player" src="https://player.vimeo.com/video/1118524876?h=3f8c680711" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
+            <iframe className="vimeo-player" src="https://player.vimeo.com/video/1118524876?h=3f8c680711" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
           </div>
         </section>
 
         <section className="about-me-copy">
           <div className="about-me-copy-wrapper">
             <AnimatedCopy animateOnScroll={true} tag="h3">
-             Your journey to a healthier life begins here
+              Your journey to a healthier life begins here
             </AnimatedCopy>
 
             <AnimatedCopy animateOnScroll={true} tag="h3">
@@ -48,7 +48,7 @@ const About = () => {
           </div>
           <div className="services-col">
             <h4>
-             Founded by Dr. Mario and Alejandra Robinson
+              Founded by Dr. Mario and Alejandra Robinson
             </h4>
 
             <div className="services-list">
@@ -58,8 +58,8 @@ const About = () => {
                 </div>
                 <div className="service-list-col">
                   <p>
-                    Our mission is to empower people to live longer, healthier, and more fulfilling lives. 
-                    Driven by our unwavering dedication, we strive to guide individuals on a transformative 
+                    Our mission is to empower people to live longer, healthier, and more fulfilling lives.
+                    Driven by our unwavering dedication, we strive to guide individuals on a transformative
                     journey toward discovering their purpose and experiencing true vitality.
                   </p>
                 </div>
@@ -71,9 +71,9 @@ const About = () => {
                 </div>
                 <div className="service-list-col">
                   <p>
-                    Camp GOTA was founded by Dr. Mario Robinson and Alejandra Robinson, 
-                    who share a deep commitment to restoring well-being, fostering hope, 
-                    and facilitating healing in a Christian environment. 
+                    Camp GOTA was founded by Dr. Mario Robinson and Alejandra Robinson,
+                    who share a deep commitment to restoring well-being, fostering hope,
+                    and facilitating healing in a Christian environment.
                   </p>
                 </div>
               </div>
@@ -84,8 +84,8 @@ const About = () => {
                 </div>
                 <div className="service-list-col">
                   <p>
-                    With a combined experience of nearly two decades, 
-                    the Robinsons have successfully helped countless individuals, 
+                    With a combined experience of nearly two decades,
+                    the Robinsons have successfully helped countless individuals,
                     empowering them through lifestyle changes.
                   </p>
                 </div>
@@ -96,12 +96,12 @@ const About = () => {
 
         <section className="about-banner-img">
           <div className="about-banner-img-wrapper">
-            <video 
-              src="/home/C1079 (2).mp4" 
-              autoPlay 
-              loop 
-              muted 
-              playsInline 
+            <video
+              src="/home/C0996.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
               className="hero-video"
             />
           </div>
