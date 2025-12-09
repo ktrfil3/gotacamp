@@ -16,11 +16,10 @@
 #review-copy {
   width: 50%;
   margin: 0 auto;
-  top: 30px;
 }
-#review-copy h4 {
+#review-copy{
   top: 60px;
-  position: static;
+  position: relative;
 }
 
 
