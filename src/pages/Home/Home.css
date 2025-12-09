@@ -38,6 +38,7 @@
   right: 20%;
   width: 80%;
   top: 100%;
+  line-height: 1;
   display: flex;
   font-size: 15px;
   justify-content: space-between;
