@@ -107,7 +107,9 @@
   .project-header {
     padding: 1.25em 1.25em 3em 1.25em;
   }
-
+  .project-header h2 {
+    font-size: 40px;
+  }
   .project-details {
     width: 100%;
     padding: 6em 1.25em;
