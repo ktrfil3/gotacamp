@@ -1,7 +1,7 @@
 const workList = [
   {
     id: 1,
-    title: "Deep Healing: Beyond a Common Detox",
+    title: "Deep Healing",
     category: "Health",
     date: "August 25, 2025",
     image: "/work/repi.jpg",
