@@ -86,29 +86,6 @@ const Home = () => {
 
         <Reviews />
 
-        <section className="hobbies">
-          <div className="hobby">
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Healing
-            </AnimatedCopy>
-          </div>
-          <div className="hobby">
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Well-being
-            </AnimatedCopy>
-          </div>
-          <div className="hobby">
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Hope
-            </AnimatedCopy>
-          </div>
-          <div className="hobby">
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Soul
-            </AnimatedCopy>
-          </div>
-        </section>
-
         <section ref={homeWorkRef} className="home-work">
           <div className="blog">
             <AnimatedCopy tag="h1" animateOnScroll={true}>
