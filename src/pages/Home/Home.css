@@ -39,6 +39,7 @@
   width: 80%;
   top: 100%;
   display: flex;
+  font-size: 30px;
   justify-content: space-between;
 }
 
