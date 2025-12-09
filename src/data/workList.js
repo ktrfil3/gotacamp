@@ -9,7 +9,7 @@ const workList = [
     id: 2,
     title: "7-Day Detox Retreats",
     category: "Cleanse your body, regain your energy, and renew your life.",
-    image: "/work/plato.jpg",
+    image: "/work/detoxs.jpg",
   },
   {
     id: 3,
