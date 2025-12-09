@@ -15,18 +15,7 @@
   height: 100vh;
 }
 
-.hero-video {
-  /* Posicionamiento y estiramiento */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* Asegura que el video cubra todo el contenedor */
-  z-index: -1;
-  /* Asegura que el video esté detrás del contenido */
-}
+
 
 .hero-header {
   position: relative;
@@ -256,6 +245,7 @@
   .sticky-work-header,
   .hobbies {
     padding: 1.25em;
+    margin-bottom: 20px;
   }
 
   .sticky-titles h2 {
@@ -301,7 +291,7 @@
 .scroll-down-indicator {
   position: absolute;
   /* Posiciona en relación al contenedor padre */
-  bottom: -8em;
+  bottom: -12em;
   /* Distancia desde la parte inferior */
   left: 50%;
   transform: translateX(-50%);
