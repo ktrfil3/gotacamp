@@ -303,9 +303,9 @@
   align-items: center;
   gap: 0.5em;
   /* Espacio entre texto y flecha */
-  color: rgb(27, 27, 27);
+  color: #235a1e;
   /* Usa tu color de fondo para que resalte en la hero */
-  font-size: 0.9em;
+  font-size: 0.8em;
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 10;
@@ -315,7 +315,7 @@
 .scroll-down-indicator p {
   margin: 0;
   /* Elimina el margen predeterminado del párrafo */
-  color: inherit;
+  color: #235a1e;
   /* Hereda el color del padre */
 }
 
