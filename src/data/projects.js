@@ -9,8 +9,7 @@ const projects = [
     id: 2,
     title: "7-Day Detox Retreats",
     description: "Street life, raw and real",
-    image: "/work/detoxs
-      .jpg",
+    image: "/work/detoxs.jpg",
   },
   {
     id: 3,
