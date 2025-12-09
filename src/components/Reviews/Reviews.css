@@ -21,7 +21,10 @@
   top: 40%;
   position: relative;
 }
-
+#review-author{
+  position: relative;
+  top: 50%;
+}
 
 .testimonialh2 {
   font-family: "coolvetica";
