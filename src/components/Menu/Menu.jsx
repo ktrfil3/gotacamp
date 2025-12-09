@@ -147,17 +147,29 @@ const Menu = () => {
       if (isMenuOpen) return;
 
       const currentScrollY = window.scrollY;
+      const delta = currentScrollY - lastScrollY.current;
 
-      if (currentScrollY > lastScrollY.current) {
-        gsap.to(".menu-bar", {
-          y: -200,
-          duration: 1,
+      // Always show if at the top
+      if (currentScrollY < 50) {
+        gsap.to(menuBarRef.current, {
+          y: 0,
+          duration: 0.5,
           ease: "power2.out",
         });
-      } else {
-        gsap.to(".menu-bar", {
+      }
+      // Hide on scroll down (with threshold)
+      else if (delta > 5) {
+        gsap.to(menuBarRef.current, {
+          y: -200,
+          duration: 0.5,
+          ease: "power2.out",
+        });
+      }
+      // Show on scroll up (with threshold)
+      else if (delta < -5) {
+        gsap.to(menuBarRef.current, {
           y: 0,
-          duration: 1,
+          duration: 0.5,
           ease: "power2.out",
         });
       }
