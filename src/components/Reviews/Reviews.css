@@ -72,6 +72,7 @@
 
 h4#review-copy,
 h4#review-author {
+  top: 50px;
   font-kerning: none;
   overflow: hidden;
   line-height: 1 !important;
