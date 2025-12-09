@@ -16,6 +16,7 @@
 #review-copy {
   width: 50%;
   margin: 0 auto;
+  top: 30px;
 }
 
 .testimonialh2 {
@@ -72,7 +73,6 @@
 
 h4#review-copy,
 h4#review-author {
-  top: 200px;
   font-kerning: none;
   overflow: hidden;
   line-height: 1 !important;
