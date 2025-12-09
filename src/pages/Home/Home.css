@@ -327,7 +327,7 @@
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-top: 10px solid #235a1e;
-  border-radius: 2px;
+  border-radius: 5px;
   /* Color de la flecha */
   animation: bounce 1.5s infinite;
   /* Animación de rebote */
