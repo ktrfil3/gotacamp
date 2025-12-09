@@ -20,6 +20,7 @@
 }
 #review-copy h4 {
   top: 60px;
+  position: static;
 }
 
 
