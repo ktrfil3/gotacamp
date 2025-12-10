@@ -38,7 +38,7 @@ const About = () => {
         <section className="services">
           <div className="services-col">
             <div className="services-banner">
-              <img src="/about/Mario_Alejandra.webp" alt="" />
+              <img src="/about/DSC08943.jpg" alt="" />
             </div>
           </div>
           <div className="services-col">
