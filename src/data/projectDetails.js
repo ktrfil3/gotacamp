@@ -69,7 +69,7 @@ const projectDetails = [
         heroImage: "/work/hombre.jpg",
         gallery: [
             "/work/mobile.jpg",
-            "/work/DSC08904.jpg",
+            "/project/DSC08904.jpg",
             "/project/estu.webp",
             "/project/mujer.webp"
         ],
