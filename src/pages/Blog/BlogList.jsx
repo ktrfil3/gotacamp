@@ -10,7 +10,7 @@ const BlogList = () => {
         <>
             <div className="blog-header">
                 <AnimatedCopy tag="h1" animateOnScroll={true}>
-                    Latest News
+                     Latest Blogs
                 </AnimatedCopy>
             </div>
 
