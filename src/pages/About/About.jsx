@@ -13,6 +13,11 @@ const About = () => {
   return (
     <ReactLenis root>
       <div className="page about">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <section className="about-hero">
           <div className="about-hero-img">
             <iframe className="vimeo-player" src="https://player.vimeo.com/video/1118524876?h=3f8c680711" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
